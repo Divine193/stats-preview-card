@@ -1,0 +1,135 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: hsl(233, 53%, 7%);
+}
+/* card-container */
+.container {
+    max-width: 500px;
+    background-color: rgb(20, 20, 46);
+    color: #fff;
+    margin: 3.75em  1.875em;
+    height: 100%;
+    border-radius: 10px;
+}
+/* image-container */
+.image-container {
+    background-image: url("./IMAGES/stats-preview-card-component-main/images/image-header-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    border-radius: 15px 15px 0 0;
+    max-width: 100%;
+    height: 350px
+}
+/* text-container */
+.main-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+/* h1-class */
+.heading {
+    font-size: 2em;
+    margin: 1.875rem 3.125rem;
+}
+/* odd-colored-text in h1 */
+span {
+    color: hsl(276, 75%, 38%);
+}
+/* main-paragraph */
+p {
+    margin-bottom: 1.875rem;
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+/* list-styles */
+ul li{
+    padding-bottom: 1.25rem;
+    list-style-type: none;
+}
+
+
+.list-paragraph {
+    color: gray;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 600px){
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .container {
+        display: flex;
+        max-width: 800px;
+        height: 300px;
+        border-radius: 10px 0 0 10px;
+        margin: 50px auto;
+        
+    }
+
+    .image-container {
+        background-image: url("./IMAGES/stats-preview-card-component-main/images/image-header-desktop.jpg");
+        width: 50%;
+        height: 100%;
+        order: 2;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .main-text {
+        width: 55%;
+    }
+
+    .heading {
+        font-size: 1.5em;
+        margin: 1.8rem 2.7rem 1.2rem;
+    }
+
+    p {
+        margin-bottom: 1.875rem;
+        line-height: 1.5;
+        font-size: 0.9rem;
+    }
+
+    .main-paragraph {
+        margin-left: 2.7rem;
+        margin-right: 2.7rem;
+        margin-bottom: 3rem;
+    }
+
+
+    .list-class{
+        display: flex;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        /* margin-bottom: 7rem; */
+    }
+    
+    .list-class li{
+        font-size: 0.6em;
+        /* margin-left: 1rem; */
+    }
+
+    .list-heading {
+        margin-left: 1.875rem;
+    }
+
+    .list-paragraph {
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+}
